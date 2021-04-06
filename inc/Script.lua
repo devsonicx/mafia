@@ -1214,7 +1214,7 @@ if redis:get(dany.."getidstatus"..msg.chat_id_) == "Photo" then
 		}
 		ssssys = ali[math.random(#ali)]
 		if not redis:get("KLISH:ID") then
-		sendPhoto(msg.chat_id_,msg.id_,data.photos_[0].sizes_[1].photo_.persistent_id_,' \n• USE 𖦹 '..UserNameID..' .\n• MSG 𖥳  '..msgs..' .\n• STA 𖦹 '..msg.TheRank..' .\n• iD 𖥳  '..msg.sender_user_id_..' .\n𖣤 ᴄʜ 𓄹𓄼 @UU_DANY .\n▿▿▿',dl_cb,nil)
+		sendPhoto(msg.chat_id_,msg.id_,data.photos_[0].sizes_[1].photo_.persistent_id_,' \n• USE 𖦹 '..UserNameID..' .\n• MSG 𖥳  '..msgs..' .\n• STA 𖦹 '..msg.TheRank..' .\n• iD 𖥳  '..msg.sender_user_id_..' .\n𖣤 ᴄʜ 𓄹𓄼 @ESLAM_MAFIA7 .\n▿▿▿',dl_cb,nil)
 		else
 		Text = redis:get("KLISH:ID")
 		Text = Text:gsub('IDGET',msg.sender_user_id_)
@@ -1229,7 +1229,7 @@ if redis:get(dany.."getidstatus"..msg.chat_id_) == "Photo" then
 		end
 	else
 		if not redis:get("KLISH:ID") then
-		sendMsg(msg.chat_id_,msg.id_,'•لا يمكنني عرض صورتك لانك قمت بحظر البوت او انك لاتملك صوره في بروفيلك ...! \n• USE 𖦹 '..UserNameID..' .\n• MSG 𖥳 '..msgs..' .\n• STA 𖦹 '..msg.TheRank..' .\n• iD 𖥳  '..msg.sender_user_id_..' .\n𖣤 ᴄʜ 𓄹𓄼 @UU_DANY .\n▿▿▿')
+		sendMsg(msg.chat_id_,msg.id_,'•لا يمكنني عرض صورتك لانك قمت بحظر البوت او انك لاتملك صوره في بروفيلك ...! \n• USE 𖦹 '..UserNameID..' .\n• MSG 𖥳 '..msgs..' .\n• STA 𖦹 '..msg.TheRank..' .\n• iD 𖥳  '..msg.sender_user_id_..' .\n𖣤 ᴄʜ 𓄹𓄼 @ESLAM_MAFIA7 .\n▿▿▿')
 		else
 		Text = redis:get("KLISH:ID")
 		Text = Text:gsub('IDGET',msg.sender_user_id_)
@@ -1256,7 +1256,7 @@ else
 		Text = Text:gsub('User_Points',nko)
 		sendMsg(msg.chat_id_,msg.id_,Flter_Markdown(Text))
 		else
-		sendMsg(msg.chat_id_,msg.id_,'•الايدي بالصوره معطل   \n• USE 𖦹'..UserNameID..' .\n• MSG 𖥳'..msgs..' .\n• STA 𖦹 '..msg.TheRank..' .\n• iD 𖥳  '..msg.sender_user_id_..' .\n𖣤 ᴄʜ 𓄹𓄼 @UU_DANY .')
+		sendMsg(msg.chat_id_,msg.id_,'•الايدي بالصوره معطل   \n• USE 𖦹'..UserNameID..' .\n• MSG 𖥳'..msgs..' .\n• STA 𖦹 '..msg.TheRank..' .\n• iD 𖥳  '..msg.sender_user_id_..' .\n𖣤 ᴄʜ 𓄹𓄼 @ESLAM_MAFIA7 .')
 		end
 end
 
@@ -1849,7 +1849,7 @@ end
 
 if (MsgText[1] ==  'تحديث السورس'  or MsgText[1] ==  'تحديث السورس 🔂' ) then
 if not msg.SudoBase then return "*│*هذا الامر يخص {المطور الاساسي} فقط  \n" end
-local GetVerison = https.request( 'https://raw.githubusercontent.com/devsonicx/danyfile/master/GetVersion.txt' ) or 0
+local GetVerison = https.request( 'https://raw.githubusercontent.com/devsonicx/mafiafile/master/GetVersion.txt' ) or 0
 print(GetVerison.." > "..version)
 if GetVerison > version then
 UpdateSourceStart = true
@@ -1863,7 +1863,7 @@ return false
 end
 
 if MsgText[1] == 'اصدار السورس' or MsgText[1] == 'الاصدار' then
-return '⋆اصدار سورس دانـي : *v'..version..'* \n'
+return '⋆اصدار سورس مـافيـا : *v'..version..'* \n'
 end
 
 
@@ -1898,7 +1898,7 @@ else
 sendMsg(msg.chat_id_,msg.id_,"⋆** عذراً النسخه الاحتياطيه هذا ليست للبوت » ["..Bot_User.."]  \n")
 end
 else 
-sendMsg(msg.chat_id_,msg.id_,'⋆** عذراً اسم الملف غير مدعوم للنظام او لا يتوافق مع سورس دانـي يرجاء جلب الملف الاصلي الذي قمت بسحبه وبدون تعديل ع الاسم\n')
+sendMsg(msg.chat_id_,msg.id_,'⋆** عذراً اسم الملف غير مدعوم للنظام او لا يتوافق مع سورس مـافيـا يرجاء جلب الملف الاصلي الذي قمت بسحبه وبدون تعديل ع الاسم\n')
 end  
 else
 sendMsg(msg.chat_id_,msg.id_,'⋆** عذراً الملف ليس بصيغه Json !?\n')
@@ -1921,8 +1921,8 @@ end
 if (MsgText[1]== "ايدي" or MsgText[1]=="ايديي🆔") and msg.type == "pv" then return  "\n⋆اهلاً عزيزي المطور ايديك :\n\n⋆"..msg.sender_user_id_.."\n"  end
 
 if MsgText[1]== "قناة السورس" and msg.type == "pv" then
-local inline = {{{text="-قنآهہ‏‏ آلسـورس اضـغـط هـنـآ ",url="https://t.me/UU_DANY"}}}
-send_key(msg.sender_user_id_,'   [قناة سورس : دانـي](https://t.me/UU_DANY)' ,nil,inline,msg.id_)
+local inline = {{{text="-قنآهہ‏‏ آلسـورس اضـغـط هـنـآ ",url="https://t.me/ESLAM_MAFIA7"}}}
+send_key(msg.sender_user_id_,'   [قناة سورس : مـافيـا](https://t.me/ESLAM_MAFIA7)' ,nil,inline,msg.id_)
 return false
 end
 
@@ -2101,7 +2101,7 @@ return [[
 ⌯︙ م3 «» اوامر الحماية‌‏
 ⌯︙ م4 «» اوامر الخدمه 
 ⌯︙ م5 «»  اوامر المطور
-⌯︙ .[قـنـاه الـسـورس](t.me/UU_DANY) 
+⌯︙ .[قـنـاه الـسـورس](t.me/ESLAM_MAFIA7) 
 ⌯︙ [ مـطـور الـسـورس ](t.me/UU_IV)
 ܀⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤܀
 ⌯︙ ** لـلإسـتـفـسـار ↤︎ ]]..SUDO_USER
@@ -2317,7 +2317,7 @@ end
 end 
 if MsgText[1] == "معلومات الكيبورد" or MsgText[1]=="/help" then
 return [[
-𓆩 اهلا بك في داني  𓆪
+𓆩 اهلا بك في مافيا  𓆪
 ⋆  ━━━    ━━━ ⋆ 
 مرحبا بك مطوري سأشرح لك كل شئ في لوحه الاوامر بالتفصيل
 1• الاحصائيات { لعرض عدد المجموعات، والمشتركين في البوت
@@ -2345,9 +2345,9 @@ end
 if MsgText[1] == "السورس" or MsgText[1]=="سورس" then
 local keyboard = {}
 keyboard.inline_keyboard = {
-{{text = '- SOURCE DEV .',url="https://t.me/uu_iv"}},
-{{text = '- SOURCE DEV .',url="https://t.me/a_aaqp"}},
-{{text = '- 𝐬𝐨𝐮𝐫𝐜𝐞 .',url="https://t.me/uu_dany"}},
+{{text = '- SOURCE DEV .',url="https://t.me/ESLamm7"}},
+{{text = '- SOURCE DEV .',url="https://t.me/M0STaFa_6"}},
+{{text = '- 𝐬𝐨𝐮𝐫𝐜𝐞 .',url="https://t.me/ESLAM_MAFIA7"}},
 }   
 send_inline(msg.chat_id_,  "𓆩 𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒔𝒐𝒖𝒓𝒄𝒆  𓆪" ,keyboard,'html')
 end
@@ -3934,8 +3934,9 @@ return sendMsg(msg.chat_id_,msg.id_,dr[math.random(#dr)])
 elseif not msg.SudoUser and Text==" بوت" or Text == "بوت" then
 return 
 sendMsg(msg.chat_id_,msg.id_,nnn[math.random(#nnn)]) 
-elseif Text== "سونيك" or Text== "سوني" then return  sendMsg(msg.chat_id_,msg.id_,"[مطور سورس داني↯](https://t.me/UU_IV)")
-elseif Text== "حجاج" or Text== "حجاجج" then return  sendMsg(msg.chat_id_,msg.id_,"[مطور سورس داني↯](https://t.me/a_aaqp)")
+elseif Text== "سونيك" or Text== "سوني" then return  sendMsg(msg.chat_id_,msg.id_,"[مطور سورس مافيا↯](https://t.me/UU_IV)")
+elseif Text== "مصطفي" or Text== "صاصا" then return  sendMsg(msg.chat_id_,msg.id_,"[مطور سورس مافيا↯](https://t.me/M0STaFa_6)")
+elseif Text== "مافيا" or Text== "اسلام" then return  sendMsg(msg.chat_id_,msg.id_,"[مطور سورس مافيا↯](https://t.me/ESLamm7)")
 elseif Text== "رفع غبي"  then return sendMsg(msg.chat_id_,msg.id_,"⋆أهلاً عزيزي\n⋆تم رفع الغبي بنجاح↯\n⋆تمت إضافته إلى قائمه الأغبياء\n☆")
 elseif Text== "تنزيل غبي"  then return sendMsg(msg.chat_id_,msg.id_,"⋆أهلاً عزيزي\n⋆تم تنزيل الغبي بنجاح↯\n⋆تمت الزاله من قائمه الأغبياء\n☆")
 elseif Text== "رفع كلب"  then return sendMsg(msg.chat_id_,msg.id_,"⋆أهلاً عزيزي\n⋆تم رفع الكلب بنجاح↯\n⋆تمت إضافته إلى قائمه الكلاب\n☆")
@@ -4024,28 +4025,28 @@ elseif Text:match(Bot_Name.."كيفك") then
   --=====================================
 elseif Text== "انا مين" or Text== "مين انا"  then
 if msg.SudoUser then  
-return sendMsg(msg.chat_id_,msg.id_,"[انت مطوري الغالي ♕](https://t.me/UU_DANY) ")
+return sendMsg(msg.chat_id_,msg.id_,"[انت مطوري الغالي ♕](https://t.me/ESLAM_MAFIA7) ")
 elseif msg.Creator then 
-return sendMsg(msg.chat_id_,msg.id_,"[انت منشئ المجموعه  تاج راسي♔](https://t.me/UU_DANY)")
+return sendMsg(msg.chat_id_,msg.id_,"[انت منشئ المجموعه  تاج راسي♔](https://t.me/ESLAM_MAFIA7)")
 elseif msg.Director then 
-return sendMsg(msg.chat_id_,msg.id_,"[انت مدير المجموعه๑](https://t.me/UU_DANY)")
+return sendMsg(msg.chat_id_,msg.id_,"[انت مدير المجموعه๑](https://t.me/ESLAM_MAFIA7)")
 elseif msg.Admin then 
-return sendMsg(msg.chat_id_,msg.id_,"[انت ادمن شد حيلك♘](https://t.me/UU_DANY)")
+return sendMsg(msg.chat_id_,msg.id_,"[انت ادمن شد حيلك♘](https://t.me/ESLAM_MAFIA7)")
 else 
-return sendMsg(msg.chat_id_,msg.id_,"[مجرد عضو هنا 𖦹](https://t.me/UU_DANY)")
+return sendMsg(msg.chat_id_,msg.id_,"[مجرد عضو هنا 𖦹](https://t.me/ESLAM_MAFIA7)")
 end 
 end 
 elseif Text== "مين ضافني" or Text== "منو ضافني"  then
 if msg.SudoUser then  
-return sendMsg(msg.chat_id_,msg.id_,"[انت مكانك كل مكان يا مطور♕](https://t.me/UU_DANY) ")
+return sendMsg(msg.chat_id_,msg.id_,"[انت مكانك كل مكان يا مطور♕](https://t.me/ESLAM_MAFIA7) ")
 elseif msg.Creator then 
-return sendMsg(msg.chat_id_,msg.id_,"[انت منشئ المجموعه](https://t.me/UU_DANY)")
+return sendMsg(msg.chat_id_,msg.id_,"[انت منشئ المجموعه](https://t.me/ESLAM_MAFIA7)")
 elseif msg.Director then 
-return sendMsg(msg.chat_id_,msg.id_,"[انت دخلت عبر الرابط](https://t.me/UU_DANY)")
+return sendMsg(msg.chat_id_,msg.id_,"[انت دخلت عبر الرابط](https://t.me/ESLAM_MAFIA7)")
 elseif msg.Admin then 
-return sendMsg(msg.chat_id_,msg.id_,"[انت دخلت عبر الرابط](https://t.me/UU_DANY)")
+return sendMsg(msg.chat_id_,msg.id_,"[انت دخلت عبر الرابط](https://t.me/ESLAM_MAFIA7)")
 else 
-return sendMsg(msg.chat_id_,msg.id_,"[انت دخلت عبر الرابط](https://t.me/UU_DANY)")
+return sendMsg(msg.chat_id_,msg.id_,"[انت دخلت عبر الرابط](https://t.me/ESLAM_MAFIA7)")
 end
 
 
